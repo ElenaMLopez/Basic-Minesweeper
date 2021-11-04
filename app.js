@@ -10,19 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fill some random bombs
     const bombsArray = Array(bombsAmount).fill('bomb');
     const emptyArray = Array(width*width - bombsAmount).fill('valid');
-    console.log({bombsArray})
-    console.log({emptyArray})
     const gameArray = emptyArray.concat(bombsArray);
     // You can use this too =): 
     //const gameArray = [...emptyArray, bombsArray];
-    console.log({gameArray})
     const shuffledArray = gameArray.sort(() => Math.random() - 0.5);
-    console.log({shuffledArray})
+    console.log(shuffledArray)
     
     // Create board
     for(let i = 0; i < width * width; i++) {
       const square = document.createElement('div');
       square.setAttribute('id', i);
+      // Add a class with the current value for each div
+      square.classList.add(shuffledArray[i]);
       grid.appendChild(square);
       squares.push(square);
     }
