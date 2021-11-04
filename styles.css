@@ -1,15 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+.container {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
 .grid {
-  background: grey;
+  background: #e2e2e2;
   display: flex;
   flex-wrap: wrap;
+  margin: 3rem auto;
   height: 400px;
   width: 400px;
 }
 
-.grid div {
+.square {
+  border: 6px solid;
+  border-color: #dadada #7c7c7c #949494 #ededed;
+  text-align: center;
+  padding: .5rem;
   height: 40px;
   width: 40px;
 }
 .bomb {
-  background: orange;
+  padding: .1rem;
+}
+.flag {
+  padding: .1rem;
+}
+.checked {
+  background: green;
+  border: 1px solid #084b02;
+  
 }
