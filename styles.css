@@ -1,16 +1,23 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 .container {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
+.message {
+  line-height: 1em;
+  margin: 20px auto 0;
+}
 .grid {
   background: #e2e2e2;
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   height: 400px;
   width: 400px;
 }
